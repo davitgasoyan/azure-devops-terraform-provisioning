@@ -42,4 +42,32 @@ azure_devops_org = "https://dev.azure.com/<organization>"
 ```
 Replace `<Azure DevOps Token>` and `<organization>` with your own values.
 
+3. **Initialize Terraform:**
 
+```bash
+terraform init
+```
+
+4. **Edit `repo/azure-pipelines.yml` pipeline file and apply the deployment:**
+
+```bash
+terraform apply
+```
+
+6. **Retrieve the clone URL for your repository:**
+
+``` bash
+Outputs:
+
+repo_clone_url = "https://dev.azure.com/<organization>/<project>/_git/<project>-repo"
+```
+
+7. **Clone the newly created repository and push your code**
+
+##Notes
+
+*The repository name is automatically derived from the project name: <project-name>-repo.
+
+*Branch in the pipeline YAML should match master (or adjust branch_name in main.tf).
+
+*To create multiple projects clone this Terraform directory for each project (separate state)
