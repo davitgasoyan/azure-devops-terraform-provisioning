@@ -64,9 +64,9 @@ repo_clone_url = "https://dev.azure.com/<organization>/<project>/_git/<project>-
 
 7. **Clone the newly created repository and push your code**
 
-##Notes
+## Notes
 
-* The repository name is automatically derived from the project name: <project-name>-repo.
+* The repository name is automatically derived from the project name: `<project-name>`-repo.
 
 * Branch in the pipeline YAML should match master (or adjust branch_name in main.tf).
 
