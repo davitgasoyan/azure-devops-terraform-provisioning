@@ -40,5 +40,6 @@ cd azure-devops-terraform-provisioning
 azure_devops_pat = "<Azure DevOps Token>"
 azure_devops_org = "https://dev.azure.com/<organization>"
 ```
-Replace <Azure DevOps Token> and <organization> with your own values.
+Replace `<Azure DevOps Token>` and `<organization>` with your own values.
+
 
