@@ -34,5 +34,11 @@ git clone https://github.com/davitgasoyan/azure-devops-terraform-provisioning
 cd azure-devops-terraform-provisioning
 ```
 
-2. **Fill terraform.tfvars with your credentials:**
+2. **Fill `terraform.tfvars` with your credentials:**
+
+```hcl
+azure_devops_pat = "<Azure DevOps Token>"
+azure_devops_org = "https://dev.azure.com/<organization>"
+```
+Replace <Azure DevOps Token> and <organization> with your own values.
 
