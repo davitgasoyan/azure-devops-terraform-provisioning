@@ -1,0 +1,18 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: CmdLine@2
+    inputs:
+      script: |
+        echo "Hello world" > test.txt
+
+  - task: CmdLine@2
+    inputs:
+      script: |
+        cat test.txt
