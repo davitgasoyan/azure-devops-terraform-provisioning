@@ -66,8 +66,8 @@ repo_clone_url = "https://dev.azure.com/<organization>/<project>/_git/<project>-
 
 ##Notes
 
-*The repository name is automatically derived from the project name: <project-name>-repo.*
+* The repository name is automatically derived from the project name: <project-name>-repo.
 
-*Branch in the pipeline YAML should match master (or adjust branch_name in main.tf).*
+* Branch in the pipeline YAML should match master (or adjust branch_name in main.tf).
 
-*To create multiple projects clone this Terraform directory for each project (separate state)*
+* To create multiple projects clone this Terraform directory for each project (separate state)
